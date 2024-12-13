@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 const Navbar = () => {
     return (
         <nav className ="navbar navbar-expand-lg bg-body-tertiary">
@@ -10,6 +9,9 @@ const Navbar = () => {
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li>
                             <Link to ="/add">Add User</Link>
+                        </li>
+                        <li>
+                            <Link to ="/users">User List</Link>
                         </li>
                     </ul>
                 </div>

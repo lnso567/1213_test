@@ -1,22 +1,18 @@
-import {Routes, Route, BrowserRouter} from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import AddUser from "./pages/AddUser";
-import EditUser from "./pages/EditUser";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './Navbar';
+import UserList from './UserList'; // 引入 UserList 組件
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Navbar/>
-      <div>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="add" element={<AddUser/>}/>
-          <Route path="edit/:id" element={<EditUser/>}/>
-        </Routes>
-      </div>
-    </BrowserRouter>
-  );
+    return (
+        <Router>
+            <Navbar/>
+            <Routes>
+                <Route path="/users" element={<UserList/>} /> {/* 建立路由 */}
+                {/* 其他路由 ...*/}
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

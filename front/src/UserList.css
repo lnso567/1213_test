@@ -1,0 +1,26 @@
+.user-list {
+    margin: 20px;
+  }
+  
+  .user-card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+  }
+  
+  .user-card h2 {
+      margin-top: 0;
+  }
+  
+  .user-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .user-card > div{
+    display: flex;
+    align-items: center;
+  }
